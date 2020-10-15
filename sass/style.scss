@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header";
+@import "blocks/socials";
+
+@import "blocks/menu";
+@import "blocks/hamburger";
+
+@import "blocks/projects";
+@import "blocks/like";
+@import "blocks/links";
+@import "blocks/studio";
+
+@import "blocks/persions";
+
+@import "blocks/news";
+@import "blocks/footer";

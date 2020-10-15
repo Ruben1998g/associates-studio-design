@@ -1,0 +1,196 @@
+.footer{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+
+
+
+
+	.footer__logo{
+	display:block;
+	max-width:100%;
+	}
+
+.footer__slogan{
+	
+	font-size:18px;
+	color:$colorText;
+	line-height:1;
+	text-transform:uppercase;
+	margin:0;
+	margin-top:5px;
+
+	@media(min-width:1500px){
+		@include dinamicText(112.5%,36, 18,1500px,3000,1500);
+	}
+}
+
+.footer__socials{
+	mergin-top:60px;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+
+
+
+
+
+.footer__address{
+	font-size:13px;
+	color:$colorText;
+	text-transform:uppercase;
+	line-height:1.077;
+	left:12.9%;
+	bottom:36.5%;
+	margin:0;
+	margin:10% 0;
+
+		@media(min-width:1500px){
+			@include dinamicText(81.25%,26, 13,1500px,3000,1500);
+		}
+}
+
+.footer__contacts{
+	font-size:13px;
+	color:$colorText;
+	text-transform:uppercase;
+	line-height:1.077;
+	left:30%;
+	bottom:20%;
+	margin:0;
+	margin:10% 0;
+
+		@media(min-width:1500px){
+			@include dinamicText(81.25%,26, 13,1500px,3000,1500);
+		}
+}
+
+
+.footer__tel, .footer__email{
+	order:20;
+	color:$colorText;
+	line-height:1.077;
+	text-decoration:none;
+	display:inline-block;
+	transition-duration:500ms;
+	transition-property:color;
+
+	&:hover{
+		color:$activeTextColor;
+	}
+}
+
+
+
+
+
+}
+
+.footer__map{
+	grid-column:span 1;
+	
+}
+
+.footer__info{
+	grid-column:span 1;
+
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.footer__copy{
+	font-size:12px;
+	color:$colorText;
+	line-height:1.8;
+	text-align:center;
+	flex-basis:100%;
+
+		@media(min-width:1500px){
+			@include dinamicText(75%,24, 12,1500px,3000,1500);
+		}
+
+	margin:9.3% 0 7% 0;
+}
+
+
+
+.footer__left{
+	margin-left:15.3%;
+	margin-top:20%;
+}
+
+.footer__right{
+	margin-right:22%;
+	margin-top:20%;
+}
+
+@media(max-width:1500px){
+	.footer__right{
+		margin-right:2%;
+	}
+	.footer__map{
+	padding-right:20px;
+	width:600px;
+	}
+}
+
+@media(max-width:800px){
+	
+	.footer__map{
+		display:none;
+	}
+
+}
+
+
+@media(max-width:768px){
+
+	.footer{
+		grid-template-columns:1fr;
+	}
+
+	.footer__map{
+		
+	}
+
+	.footer__left{
+		margin-left:5%;
+	}
+
+	.footer__right{
+		margin-right:5%;
+	}
+
+	
+}
+
+
+@media(max-width:560px){
+
+.footer__info{
+	display:block;
+}
+	
+.footer__left{
+	text-aling:center;
+	margin-right:5%;
+	margin-top:10%;
+}
+
+.footer__right{
+	text-aling:center;
+	margin-left:5%;
+	margin-top:5%;
+}
+
+.footer__logo{
+	margin:0 auto;
+}
+
+.footer__socials{
+	maring__left:0;
+	justify-content:center;
+}
+
+}
