@@ -1,1 +1,3 @@
-# associates-studio-disighn
+# Associates Studio design
+
+Проект выполнен на grid-ах
